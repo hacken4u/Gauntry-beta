@@ -46,6 +46,9 @@ The designated distribution channel is the Releases page of this repository. Eli
    - Windows: `certutil -hashfile <file> SHA256`
 4. Copy the APK to the phone if needed, then open it.
 5. Android will ask you to allow installs from the app you used to open the file (for example your browser or file manager). Allow it for that app, then install.
+
+   Samsung Galaxy phones: Samsung's Auto Blocker may prevent installation of apps downloaded outside official app stores. If Auto Blocker blocks the Gauntry APK, first verify that it was downloaded from the official repository Releases page and that its SHA-256 matches the published value. Then, if you choose to proceed, open Settings > Security and privacy > Auto Blocker and temporarily turn off Auto Blocker to complete the installation. Turn Auto Blocker back on immediately afterward. Disabling Auto Blocker temporarily reduces device security protections. Menu names may vary by device and One UI version.
+
 6. Open Gauntry.
 
 ### What to expect on first start
