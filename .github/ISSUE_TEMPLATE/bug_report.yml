@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in Gauntry did not work as expected.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing Gauntry. Issues here are public.
+        Do not paste captured traffic, tokens, passwords, API keys, session cookies, customer data or any personal data. Describe the problem instead.
+        To report a security problem, do not use this form. Follow SECURITY.md instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe what you saw. Quote any on-screen message word for word.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Number each step, starting from opening the app.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: gauntry-version
+    attributes:
+      label: Gauntry version
+      description: The version shown in Gauntry under Setup, then About.
+    validations:
+      required: true
+  - type: input
+    id: android-version
+    attributes:
+      label: Android version
+    validations:
+      required: true
+  - type: input
+    id: phone-model
+    attributes:
+      label: Phone model
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have removed any captured traffic, tokens, passwords, keys and personal data from this report
+          required: true

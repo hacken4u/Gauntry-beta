@@ -1,0 +1,36 @@
+name: Feedback
+description: Tell us what you were trying to do and what would have helped.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing Gauntry. Issues here are public.
+        Do not paste captured traffic, tokens, passwords, API keys, session cookies, customer data or any personal data.
+  - type: textarea
+    id: trying-to-do
+    attributes:
+      label: What you were trying to do
+    validations:
+      required: true
+  - type: textarea
+    id: would-have-helped
+    attributes:
+      label: What would have helped
+    validations:
+      required: true
+  - type: input
+    id: gauntry-version
+    attributes:
+      label: Gauntry version (optional)
+      description: The version shown in Gauntry under Setup, then About.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have removed any captured traffic, tokens, passwords, keys and personal data from this report
+          required: true
